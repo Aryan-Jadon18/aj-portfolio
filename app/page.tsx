@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+import SpaceCanvas from "@/components/SpaceCanvas";
 import Preloader from "@/components/Preloader";
 import Hud from "@/components/Hud";
 import SideNav from "@/components/SideNav";
@@ -10,13 +10,10 @@ import Missions from "@/sections/Missions";
 import Terminal from "@/components/Terminal";
 import Contact from "@/sections/Contact";
 
-// 3D scene is client-only and lazy-loaded (no SSR, big bundle)
-const Space = dynamic(() => import("@/components/Space"), { ssr: false });
-
 export default function Page() {
   return (
     <>
-      <Space />
+      <SpaceCanvas />
       <div className="vignette" aria-hidden />
       <div className="scanlines" aria-hidden />
       <div className="grain" aria-hidden />
