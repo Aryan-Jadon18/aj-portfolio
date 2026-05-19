@@ -5,7 +5,8 @@
       "Bash(npm run *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(npm view *)"
+      "Bash(npm view *)",
+      "Bash(node -e \"const r=require\\('./node_modules/@react-three/fiber/package.json'\\); console.log\\('fiber:', r.version\\); const d=require\\('./node_modules/@react-three/drei/package.json'\\); console.log\\('drei:', d.version\\); const t=require\\('./node_modules/three/package.json'\\); console.log\\('three:', t.version\\); const re=require\\('./node_modules/react/package.json'\\); console.log\\('react:', re.version\\);\")"
     ]
   }
 }
